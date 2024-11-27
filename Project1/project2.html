@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="project2.css">
+</head>
+<body>
+    <header>
+        <div class="image-container">
+            <img src="bg1.webp" alt="background-image">
+        </div>
+        <div class="nav-section">
+            <nav class="nav">
+                <div class="container-nav">
+                 <div class="logo-container">
+                 <p style="cursor: pointer;">Get The App</p>
+                </div>
+                <ul>
+                 <li><a href="Investor Relations">Investor Relations</a></li>
+                 <li><a href="Add Restraunts">Add Restraunts</a></li>
+                 <li><a href="Log in">Log in</a></li>
+                 <li><a href="Sign up">Sign up</a></li>
+                </ul>
+                     </div>
+                 
+                 </nav>
+             
+             <div class="main-body">
+                <div class="container container-main-body">
+                 <img class="zomato-logo"src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="">
+                 <p class="heading">Discover the best food & drinks in Pune</p>
+                 <div class="search-container">
+                    <div class="Location">
+                        <input type="text" placeholder="Baner,Pune">
+                    </div>
+                   
+                       <div class="search-item">
+                        <input type="text" placeholder="Search for restraunt,cusin or a dish">
+                       </div>
+                 </div>
+             </div>
+             </div>
+        </div>
+        <div class="card">
+            <div class="card1">
+                <img src="img1.avif" " alt="">
+                <h3>Order Online</h3>
+                <p>Stay home and order to your doorstep</p>
+                
+            </div>
+    
+            <div class="card1">
+                <img src="img2.avif" alt="">
+                <h3>Dining</h3>
+                <p>View the city's favourite dining venue</p>
+            </div>
+    
+            <div class="card1">
+                <img src="img4.jfif" alt="">
+                <h3>Live Events</h3>
+                <p>Discover India's best even and concert</p>
+            </div>
+       </div>
+    
+       <div class="collections">
+        <div class="section-top">
+        <div class="section-left">
+            <h1>Collection's</h1>
+            <p>Explore curated lists of top restaurants,cafes,pubs,and bars in Pune, based on trends</p>
+        </div>
+        </div>
+           <div class="lists">
+            <img src="zomato2.jpg" alt="">
+            <img src="zomata4.jfif" alt="">
+            <img src="zomato6.jfif" alt="">
+            <img src="zomato9.jfif" alt="">
+        </div>
+       </div>
+       
+       <div class="collections-near">
+        <h1>Explore options near me</h1>
+        <div class="option">
+            <button>Popular cuisines naer me</button>
+        </div>
+        <div class="option">
+            <button>Popular Restaurant Types Near me</button>
+        </div>
+        <div class="option">
+            <button>Top Restaurant Chains
+            </button>
+        </div>
+        <div class="option">
+            <button>Cities We Deliver</button>
+        </div>
+       </div>
+       
+        </header>
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt="">
+                    <div class="footer-btn">
+                        <button>India</button>
+                        <button>English</button>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="column">
+                        <div>About Zomato</div>
+                        <ul class="col-links">
+                            <li><a href="">Who we are</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Work with us</a></li>
+                            <li><a href="">Investor Relations</a></li>
+                            <li><a href="">Report Fraund</a></li>
+                            <li><a href="">press kit</a></li>
+                            <li><a href="">Contact us</a></li>
+                             </ul>
+                    </div>
+                    <div class="column">
+                        <div>Zomaverse</div>
+                        <ul class="col-links">
+                            <li><a href="">Zomato</a></li>
+                            <li><a href="">Blinkit</a></li>
+                            <li><a href="">Feeding India</a></li>
+                            <li><a href="">Hyperpure</a></li>
+                            <li><a href="">Zomato Live</a></li>
+                            <li><a href="">Zomaland</a></li>
+                            <li><a href="">Weather Union</a></li>
+                             </ul>
+                    </div>
+                    <div class="column">
+                        <div>For Restaurants</div>
+                        <ul class="col-links">
+                            <li><a href="">Partner with you</a></li>
+                            <li><a href="">Apps for you</a></li>
+                         </ul>
+                    </div>
+                    <div class="column">
+                        <div>Learn More</div>
+                        <ul class="col-links">
+                            <li><a href="">Privacy</a></li>
+                            <li><a href="">Security</a></li>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Sitemap</a></li>
+                             </ul>
+                    </div>
+                    <div class="column">
+                        <div>Social links</div>
+                        <ul class="col-links">
+                </div>
+            </div>
+        </div>
+        </div>
+    
+</body>
+</html>
